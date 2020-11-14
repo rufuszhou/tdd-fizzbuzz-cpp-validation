@@ -98,4 +98,3 @@ Fizz
 98
 Fizz
 Buzz
-
