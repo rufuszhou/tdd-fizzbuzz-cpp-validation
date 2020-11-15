@@ -1,6 +1,6 @@
 {
     "build_folder": "./build/",
-    "executable": "./build/src/tdd_fizzbuzz_cpp",
+    "executable": "./build/src/tdd_cpp_exe",
     "unittest_xml_output": "./test_detail.xml",
     "unittest_coverage_output": "./test_coverage.txt",
     "unittest_cmd": "make test",
