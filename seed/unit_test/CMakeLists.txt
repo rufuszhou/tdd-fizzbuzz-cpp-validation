@@ -31,7 +31,7 @@ setup_target_for_coverage_gcovr_html(
     NAME unit_test_coverage_html                # New target name
     EXECUTABLE unit_test --gtest_output=xml     # Executable in PROJECT_BINARY_DIR
     DEPENDENCIES unit_test                      # Dependencies to build first
-    EXCLUDE "/usr/*" "/mingw64/" "mingw32/" "${PROJECT_SOURCE_DIR}/unit_test/"
+    EXCLUDE "/usr/include/" "/usr/local/include/" "/mingw64/" "/mingw32/" "${PROJECT_SOURCE_DIR}/unit_test/"
     NO_DEMANGLE                                 # Don't demngle C++ symbols
                                                 #  even if c++filt is found
     )
@@ -39,9 +39,8 @@ setup_target_for_coverage_gcovr_html(
 setup_target_for_coverage_gcovr(
     NAME unit_test_coverage                     # New target name
     EXECUTABLE unit_test --gtest_output=xml     # Executable in PROJECT_BINARY_DIR
-    #EXECUTABLE ctest     # Executable in PROJECT_BINARY_DIR
     DEPENDENCIES unit_test                      # Dependencies to build first
-    EXCLUDE "/usr/*" "/mingw64/" "/mingw32/" "${PROJECT_SOURCE_DIR}/unit_test/"
+    EXCLUDE "/usr/include/" "/usr/local/include/" "/mingw64/" "/mingw32/" "${PROJECT_SOURCE_DIR}/unit_test/"
     NO_DEMANGLE                                 # Don't demngle C++ symbols
                                                 #  even if c++filt is found
     )

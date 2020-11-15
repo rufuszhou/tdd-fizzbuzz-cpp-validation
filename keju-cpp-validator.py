@@ -363,7 +363,10 @@ class KejuCppProject:
                     for w in words:
                         if w.endswith("%"):
                             w = w[0:len(w)-1]
-                            coverage_rate = int(w)
+                            try:
+                                coverage_rate = int(w)
+                            except ValueError:
+                                coverage_rate = 0
                             if coverage_rate >= self.min_line_rate:
                                 result = True
                                 print("SUCCEED:[COVERAGE] PASS")

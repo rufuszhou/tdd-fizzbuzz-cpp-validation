@@ -8,10 +8,10 @@
     "coverage_html_cmd": "make unit_test_coverage_html",
 
     "ignored_different_files": ["./src/main.cpp"],
-    "forbidden_different_files": ["cmake/CodeCoverage.cmake", "src/CMakeLists.txt", "unit_test/CMakeLists.txt"],
+    "forbidden_different_files": ["./cmake/CodeCoverage.cmake", "./src/CMakeLists.txt", "./unit_test/CMakeLists.txt"],
 
     "ignored_missing_files": ["./unit_test/dummy_test.cpp"],
-    "forbidden_missing_files": ["cmake/CodeCoverage.cmake", "src/CMakeLists.txt", "unit_test/CMakeLists.txt"],
+    "forbidden_missing_files": ["./cmake/CodeCoverage.cmake", "./src/CMakeLists.txt", "./unit_test/CMakeLists.txt"],
 
     "coverage_min_line_rate": 100,
     "coverage_min_func_rate": 70,
